@@ -1,0 +1,119 @@
+﻿<Window x:Class="VendingP.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VendingP"
+        mc:Ignorable="d"
+    Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0">
+            <TextBlock Text="Welcome to my Coffee vending" FontSize="30" 
+                       HorizontalAlignment="Center"
+                       FontFamily="Comic Sans MS"/>
+        </StackPanel>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="0" Margin="15">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0">
+                    <StackPanel VerticalAlignment="Top">
+                        <TextBlock Text="Make your drink choise" FontSize="40"
+                                   HorizontalAlignment="Center" TextWrapping="Wrap"
+                                   FontFamily="Comic Sans MS"/>
+                    </StackPanel>
+                </Grid>
+
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="40"/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel Grid.Column="0">
+                        <TextBlock x:Name="drinkChoise"
+                                   Text="choose a drink:"
+                                   FontFamily="Comic Sans MS"/>
+
+                        <ComboBox x:Name="coffeeOptionsCombo"
+                                  FontFamily="Comic Sans MS"
+                                  Margin="0,0,0,15"/>
+
+                        <TextBlock x:Name="addingsChoise"
+                                   Text="choose an addition to the drink:"
+                                   FontFamily="Comic Sans MS"/>
+                        
+                        <ComboBox x:Name="additionOptionsCombo"
+                                  FontFamily="Comic Sans MS"
+                                  />
+                    </StackPanel>
+
+                    <StackPanel Grid.Column="1" HorizontalAlignment="Right">
+                        <TextBlock Text="Count" FontFamily="Comic Sans MS"/>
+                        
+                        <TextBox Name="drinksCount" FontSize="15" Text="0"
+                                 FontFamily="Comic Sans MS"
+                                 TextChanged="drinksCount_TextChanged"
+                                 Margin="0, 0, 0, 32"/>
+
+                        <TextBox Name="additionsCount" FontSize="15" Text="0"
+                                 FontFamily="Comic Sans MS"/>
+
+                    </StackPanel>
+
+                </Grid>
+            </Grid>
+
+            <Grid Grid.Column="1">
+                <StackPanel HorizontalAlignment="Center"
+                                Margin="12" VerticalAlignment="Center">
+                    
+                    <TextBlock x:Name="currentBalance" FontSize="14"
+                               TextWrapping="Wrap" FontFamily="Comic Sans MS"
+                               Margin="0,0,0,10"/>
+
+                    <TextBlock x:Name="priceToPay" FontSize="14"
+                               Text="Current sum is: 0"
+                               TextWrapping="Wrap" FontFamily="Comic Sans MS"
+                               Margin="0,0,0,30"/>
+
+                    <TextBlock FontSize="14" Text="your options are: "
+                               TextWrapping="Wrap" FontFamily="Comic Sans MS"
+                               Margin="0, 0, 0, 30"/>
+
+                    <Button x:Name="addProduct" Content="Add product"
+                            FontFamily="Comic Sans MS"
+                            FontSize="15"
+                            Margin="0, 0, 0, 10"/>
+
+                    <Button x:Name="cancelProduct" Content="Cancel product"
+                            FontFamily="Comic Sans MS"
+                            FontSize="15"
+                            Margin="0, 0, 0, 10"/>
+
+                    <Button x:Name="addMoney" Content="Add money"
+                            FontFamily="Comic Sans MS"
+                            FontSize="15"
+                            Margin="0, 0, 0, 10"/>
+                </StackPanel>
+            </Grid>
+            
+        </Grid>
+
+    </Grid>
+</Window>

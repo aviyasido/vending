@@ -1,0 +1,12 @@
+C:\Users\AVIYA ASIDO\Desktop\C#\Vending\Vending\bin\Debug\net7.0\Vending.deps.json
+C:\Users\AVIYA ASIDO\Desktop\C#\Vending\Vending\bin\Debug\net7.0\Vending.dll
+C:\Users\AVIYA ASIDO\Desktop\C#\Vending\Vending\bin\Debug\net7.0\Vending.pdb
+C:\Users\AVIYA ASIDO\Desktop\C#\Vending\Vending\obj\Debug\net7.0\Vending.csproj.AssemblyReference.cache
+C:\Users\AVIYA ASIDO\Desktop\C#\Vending\Vending\obj\Debug\net7.0\Vending.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AVIYA ASIDO\Desktop\C#\Vending\Vending\obj\Debug\net7.0\Vending.AssemblyInfoInputs.cache
+C:\Users\AVIYA ASIDO\Desktop\C#\Vending\Vending\obj\Debug\net7.0\Vending.AssemblyInfo.cs
+C:\Users\AVIYA ASIDO\Desktop\C#\Vending\Vending\obj\Debug\net7.0\Vending.csproj.CoreCompileInputs.cache
+C:\Users\AVIYA ASIDO\Desktop\C#\Vending\Vending\obj\Debug\net7.0\Vending.dll
+C:\Users\AVIYA ASIDO\Desktop\C#\Vending\Vending\obj\Debug\net7.0\refint\Vending.dll
+C:\Users\AVIYA ASIDO\Desktop\C#\Vending\Vending\obj\Debug\net7.0\Vending.pdb
+C:\Users\AVIYA ASIDO\Desktop\C#\Vending\Vending\obj\Debug\net7.0\ref\Vending.dll
